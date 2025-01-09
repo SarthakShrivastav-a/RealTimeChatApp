@@ -32,3 +32,5 @@ class AuthService:
         # Generate token
         access_token = create_access_token(identity=str(user.id))
         return True, {'token': access_token}
+    
+

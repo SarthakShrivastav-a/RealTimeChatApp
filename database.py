@@ -13,5 +13,7 @@ def insert_user(username, hashed_password):
 def find_user_by_username(username):
     return current_app.mongo.db.users.find_one({'username': username})
 
+
+
 def find_user_by_id(user_id):
     return current_app.mongo.db.users.find_one({'_id': ObjectId(user_id)})

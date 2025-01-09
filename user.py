@@ -25,3 +25,5 @@ class User:
             'password': self.password,
             'created_at': self.created_at
         }
+    
+    
